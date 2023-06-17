@@ -1,0 +1,4 @@
+body :background-color : linear-gradient(45deg, #132743, #5585b5)
+links-color : #f70776
+over-lay : linear-gradient(90deg, rgba(247, 7, 118, 0.7), black)
+buttons-hover : rgba(247, 7, 118, 1)

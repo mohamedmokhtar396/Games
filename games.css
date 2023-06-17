@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+/* section 1 */
+
+
+.section-one {
+  position: relative;
+  width: 100%;
+  height: 762px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.back-ground {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("Games/bg.jpg");
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 762px;
+  background: linear-gradient(90deg, rgba(247, 7, 118, 0.6), black);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  gap: 20px;
+}
+.welcom {
+  display: flex;
+  gap: 10px;
+}
+
+#games {
+  color: rgb(247, 7, 118);
+}
+.button {
+  border: 2px;
+}
+.button button {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(247, 7, 118);
+
+  border-radius: 15px;
+  color: white;
+  width: 130px;
+  height: 50px;
+  font-size: 22px;
+}
+.button button:hover {
+  background-color: rgb(247, 7, 118);
+  transition: 2s;
+}
+
+.nav{
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 6%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+.nav:hover{
+  width: 20%;
+  transition: 1s;
+  font-size: 24px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  
+}
+li a:hover{
+  color: rgb(247, 7, 118);
+}
+.logo{
+  width: 115px;
+  animation: rotate-infinity 2s alternate infinite;
+}
+.nav:hover .logo{
+  width: 200px;
+}
+.logo img{
+  width: 100%;
+}
+@keyframes rotate-infinity {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+ul{
+    list-style-type: none;
+}
+li{
+    color: white;
+    padding-bottom: 50px;
+}
+.games-menu{
+  position: relative;
+}
+.sub-nav {
+  transition: 1s;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  right: 110%;
+  
+}
+.gmenu:hover .sub-nav {
+  right: 195%;
+  transition: 1.5s;
+  visibility: visible;
+  
+}
+/* end of section 1 */
+
+
+
+
+
+
+
+
+
+
+/* section2 */
+
+
+
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(45deg, #132743, #5585b5);
+}
+.gameplay {
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 230px;
+  align-items: center;
+  margin-left: 42%;
+  margin-right: 42%;
+}
+.gameplay::before {
+  content: "";
+  background-color: rgb(247, 7, 118);
+  position: absolute;
+  bottom: -8px;
+  width: 50%;
+  height: 3px;
+  left: 0;
+}
+.gameplay::after {
+  content: "";
+  background-color: rgb(247, 7, 118);
+  position: absolute;
+  bottom: -8px;
+  width: 50%;
+  height: 3px;
+  right: 0;
+}
+
+/* cards  of section 2 */
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+.card {
+  width: 30%;
+  border: 2px solid rgb(2, 255, 44);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: 2s;
+  /* height: 714px; */
+}
+.card-img {
+  width: 100%;
+}
+.card-img img {
+  width: 100%;
+}
+.card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+  position: absolute;
+  top: 50%;
+  transition: 2s;
+}
+.card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+  position: absolute;
+  bottom: 50%;
+  transition: 2s;
+}
+
+.card:hover::after {
+  transform: skew(90deg);
+}
+.card:hover::before {
+  transform: skew(90deg);
+}
+
+/* end of cards 1 */
+
+/* start of cards 2 */
+.cards2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+.card-racing {
+  width: 30%;
+  border: 2px solid rgb(2, 255, 44);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: 2s;
+  /* height: 714px; */
+}
+.card-racing-img {
+  width: 100%;
+}
+.card-racing-img img {
+  width: 100%;
+}
+
+.card-racing button {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid black;
+  border-radius: 15px;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  font-size: 16px;
+  padding: 10px;
+  z-index: 2;
+  visibility: hidden;
+}
+.card-racing button:hover{
+  border: 0px;
+  background-color:rgb(247, 7, 118) ;
+  transition: 3s;
+    
+}
+.card-racing:hover button{
+  transition: 3s;
+  visibility: visible;
+
+}
+.card-racing::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+}
+
+.card-racing:hover::after {
+    background: linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+    transform: scaleY(3);
+    transition: 2s;
+}
